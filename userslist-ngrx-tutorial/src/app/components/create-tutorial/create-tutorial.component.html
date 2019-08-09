@@ -1,7 +1,7 @@
 <div class="left">
 
-  <input type="text" placeholder="name" #name>
-  <input type="text" placeholder="url" #url>
+  <input type="text" placeholder="name" #name pInputText>
+  <input type="text" placeholder="url" #url pInputText>
 
-  <button (click)="addTutorial(name.value,url.value)">Add a Tutorial</button>
+  <p-button label="Add a Tutorial" (click)="addTutorial(name.value,url.value)" ></p-button>
 </div>

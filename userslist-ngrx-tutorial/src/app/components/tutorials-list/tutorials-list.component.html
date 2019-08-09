@@ -4,7 +4,7 @@
   <ul>
     <li *ngFor="let tutorial of tutorials | async; let i = index">
       <a [href]="tutorial.url" target="_blank">{{ tutorial.name }}</a>
-      <a (click)="delTutorial(i)" href="javascript:void" class="btn-delete-tutorial">x</a>
+      <button pButton type="button" label="x" class="ui-button-danger btn-delete-tutorial" (click)="delTutorial(i)"></button>
     </li>
   </ul>
 
